@@ -11,6 +11,7 @@ class SearchForMedicalDictionary extends React.Component{
     }
     async getWordInfo(){
         const key=process.env.REACT_APP_API_KEY_MEDICAL_DICTIONARY;
+        let getWord=await axios.get
     }
     componentDidMount(){
         this.getWordInfo();
