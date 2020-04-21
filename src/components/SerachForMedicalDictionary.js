@@ -10,10 +10,11 @@ class SearchForMedicalDictionary extends React.Component{
         }
     }
     async getWordInfo(){
-        const key=process.env.REACT_APP_API_KEY_MEDICAL_DICTIONARY;
+        const key=process.env.REACT_APP_MEDICAL_API_KEY;
         try{
-        let getWord=await axios.get(`https://www.dictionaryapi.com/api/v3/references/medical/json/${this.props}?key=${key}`)
-        this.setState({wordInfo: getword})
+        let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/medical/json/${this.props.id}?key=${key}`)
+        this.setState({wordInfo: getWord});
+        console.log(this.state.wordInfo.data[0]);
     }
         catch(error){
             console.log(error);
@@ -24,6 +25,10 @@ class SearchForMedicalDictionary extends React.Component{
     }
     
     render(){
-        return()
+        return(<div>
+            Hello
+        </div>)
     }
 }
+
+export default SearchForMedicalDictionary;

@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import SearchForMedicalDictionary from "./components/SerachForMedicalDictionary";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     
+     <SearchForMedicalDictionary id="heart" />
     </div>
   );
 }
