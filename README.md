@@ -1,5 +1,6 @@
 ### myDictionary
-    My audience is a general public;
+    My audience is students and general public.
+    THis application would help medical students and college students to write essays , prepare for MCAT, SAT, GRE and other exams, by providing the information on specific words.
 
 # Wireframe
 ![alt text](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200421-125307_p1.jpg)
