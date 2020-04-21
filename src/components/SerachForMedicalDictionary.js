@@ -14,7 +14,7 @@ class SearchForMedicalDictionary extends React.Component{
         try{
         let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/medical/json/${this.props.id}?key=${key}`)
         this.setState({wordInfo: getWord.data[0]});
-        console.log(this.state.wordInfo.shortdef);
+        console.log(this.state.wordInfo);
     }
         catch(error){
             console.log(error);
@@ -31,8 +31,12 @@ class SearchForMedicalDictionary extends React.Component{
             let info=this.state.wordInfo.shortdef.map((res,index)=>{
                 return <p>{index+1}. {res}</p>})
             return <div>
-                    <p>{this.state.wordInfo</p>
-                 {info}
+                    <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
+                    <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
+                    <p>Gramatical Function: {this.state.wordInfo.fl}</p>
+                    <p>Definition(s):</p>
+                    <div> {info}</div>
+                   
                   </div>
         }
     }
