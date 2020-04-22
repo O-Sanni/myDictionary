@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Translation text="hello" language="ru" />
+    <Translation text="привіт" language="fr" />
     {/* <MedicalDictionary /> */}
     {/* <SearchForRegular text="hello"/> */}
      {/* <Navigation /> */}
