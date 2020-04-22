@@ -58,7 +58,7 @@ class SearchForRegular extends React.Component{
     }
     render(){
         return(<div>
-       {/* {this.checkIfExist()} */}
+       {this.checkIfExist()}
         </div>)
     }
 }

@@ -13,7 +13,7 @@ function App() {
     {/* <Translation text="привіт" language="fr" /> */}
     {/* <MedicalDictionary /> */}
     {/* <SearchForRegular text="hello"/> */}
-     {/* <Navigation /> */}
+     <Navigation />
     </div>
   );
 }
