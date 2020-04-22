@@ -31,7 +31,7 @@ class SearchForMedicalDictionary extends React.Component{
             let gramFunction=this.state.wordInfo.fl;
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
             let info=this.state.wordInfo.shortdef.map((res,index)=>{
-                return <p>{index+1}. {res}</p>})
+                return <p id={index+10}>{index+1}. {res}</p>})
             return <div>
                     <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
                     <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>

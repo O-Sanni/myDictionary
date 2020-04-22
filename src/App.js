@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-     {/* <SearchForMedicalDictionary id="helicobacter" /> */}
+     <SearchForMedicalDictionary id="helicobacter" />
      <SearchForRegular id="earth"/>
     </div>
   );
