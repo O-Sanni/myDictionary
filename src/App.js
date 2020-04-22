@@ -1,13 +1,15 @@
 import React from 'react';
-import MedicalDictionary from "./components/MedicalDictionary"
-import RegularDictionary from "./components/RegularDictionary"
+import Navigation from "./components/Navigation"
+import SearchForRegular from "./components/SearchForRegular"
+// import MedicalDictionary from "./components/MedicalDictionary"
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <RegularDictionary />
-    <MedicalDictionary />
+    {/* <MedicalDictionary /> */}
+    <SearchForRegular text="hello"/>
+     {/* <Navigation /> */}
     </div>
   );
 }

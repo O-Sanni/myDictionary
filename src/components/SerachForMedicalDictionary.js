@@ -15,6 +15,8 @@ class SearchForMedicalDictionary extends React.Component{
         let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/medical/json/${this.props.id}?key=${key}`)
         this.setState({wordInfo: getWord.data[0]});
         console.log(this.state.wordInfo);
+
+        
     }
         catch(error){
             console.log(error);
@@ -24,7 +26,7 @@ class SearchForMedicalDictionary extends React.Component{
         this.getWordInfo();
     }
     checkIfExist(){
-        if (this.state.wordInfo==="" || this.state.wordInfo==undefined){
+        if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined ||(typeof this.state.wordInfo!="object")){
             return <p>Word information not found</p>
         }
         else{
