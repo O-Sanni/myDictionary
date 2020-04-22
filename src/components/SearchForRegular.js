@@ -37,7 +37,11 @@ class SearchForRegular extends React.Component{
                 
                 return ( <div>{index+1}. {res.join(", ")}</div> )
             });
-            let antonyms=this.createList(this.state.wordInfo.meta.ants[0]);
+            let antonyms=this.state.wordInfo.meta.ants.map((res,index)=>{
+                
+                return ( <div>{index+1}. {res.join(", ")}</div> )
+            });
+
             return <div>
                <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
                     <p>Gramatical Function: {gramFunction}</p>
