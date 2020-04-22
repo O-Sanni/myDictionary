@@ -27,7 +27,7 @@ class Translation extends React.Component{
     
     checkIfExist(){
         if (this.state.translation===""){
-            return <p>Cannot translate</p>
+        
         }
         else{
     return(
