@@ -23,21 +23,33 @@ class SearchForRegular extends React.Component{
     componentDidMount(){
         this.getWordInfo();
     }
+    
     checkIfExist(){
         if (this.state.wordInfo===""){
             return <p>Word information not found</p>
         }
         else{
-            // let info=this.state.wordInfo.shortdef.map((res,index)=>{
-            //     return <p>{index+1}. {res}</p>})
-            // return <div>
-            //         <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
-            //         <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
-            //         <p>Gramatical Function: {this.state.wordInfo.fl}</p>
-            //         <p>Definition(s):</p>
-            //         <div> {info}</div>
+            let gramFunction=this.state.wordInfo.fl;
+            gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
+            let definition=this.state.wordInfo.shortdef.map((res,index)=>{
+                return <p>{index+1}. {res}</p>})
+            let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{
+                
+                return ( <div>{index+1}. {res.join(", ")}</div> )
+            });
+            let antonyms=this.createList(this.state.wordInfo.meta.ants[0]);
+            return <div>
+               <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
+                    <p>Gramatical Function: {gramFunction}</p>
+                     <h3>Definition(s):</h3>
+                    <div> {definition}</div>
+                    <h3>Synonyms:</h3>
+                    {synonyms}
+                    <h3>Antonyms:</h3>
+                    {antonyms}
+                
                    
-            //       </div>
+             </div>
         }
     }
     render(){

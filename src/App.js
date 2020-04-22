@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
      {/* <SearchForMedicalDictionary id="helicobacter" /> */}
-     <SearchForRegular id="obliquity"/>
+     <SearchForRegular id="earth"/>
     </div>
   );
 }
