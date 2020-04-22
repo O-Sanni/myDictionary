@@ -37,6 +37,7 @@ class TranslationPage extends React.Component{
           <label>
             Please choose language to translate
             <select value={this.state.value} onChange={this.handleLanguage}>
+              <option value="en">English</option>
               <option value="ar">Arabic</option>
               <option value="be">Belarusian</option>
               <option value="bn">Bengali</option>
@@ -62,7 +63,7 @@ class TranslationPage extends React.Component{
               <option value="pt">Portuguese</option>
                <option value="ru">Russian</option>
                <option value="es">Spanish</option>
-                   <option value="tg">Tajik</option>
+            <option value="tg">Tajik</option>
               <option value="tr">Turkish</option>
               <option value="uz">Uzbek</option>
               <option value="uk">Ukrainian</option>
