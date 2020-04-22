@@ -5,8 +5,10 @@ class MainPage extends React.Component{
     render(){
         return(
             <div>
-                <h1>Welcome ro myDictionary</h1>
+                <h1>Welcome to myDictionary</h1>
             </div>
         )
     }
 }
+
+export default MainPage;
