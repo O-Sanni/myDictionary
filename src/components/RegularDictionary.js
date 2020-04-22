@@ -1,12 +1,13 @@
 import React from "react";
 import SearchForRegular from "./SearchForRegular";
 
+const initialState="";
 
 class RegularDictionary extends React.Component{
   constructor(props){
       super(props);
       this.state={
-          searchWord: "",
+          searchWord:initialState,
           search: false
       }
       this.getWordHandler=this.getWordHandler.bind(this);
@@ -19,6 +20,7 @@ class RegularDictionary extends React.Component{
   submitButton(event){
     event.preventDefault();
     this.setState({search: true});
+    
  
   }
 
@@ -29,7 +31,8 @@ class RegularDictionary extends React.Component{
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
         </form>
-        <div id="searchResultRegular">
+        <button type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
+        <div>
        {this.state.search ? (<SearchForRegular id={this.state.searchWord} />) : "Please enter word to start a search"}
         </div>
         </div>)

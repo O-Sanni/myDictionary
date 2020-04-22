@@ -24,7 +24,7 @@ class SearchForMedicalDictionary extends React.Component{
         this.getWordInfo();
     }
     checkIfExist(){
-        if (this.state.wordInfo===""){
+        if (this.state.wordInfo==="" || this.state.wordInfo==undefined){
             return <p>Word information not found</p>
         }
         else{

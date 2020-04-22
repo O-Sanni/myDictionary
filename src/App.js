@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchForMedicalDictionary from "./components/SerachForMedicalDictionary";
+import MedicalDictionary from "./components/MedicalDictionary"
 import RegularDictionary from "./components/RegularDictionary"
 import './App.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
      <RegularDictionary />
-     {/* <SearchForMedicalDictionary id="helicobacter" /> */}
+    <MedicalDictionary />
     </div>
   );
 }

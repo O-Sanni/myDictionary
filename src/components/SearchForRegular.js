@@ -14,6 +14,7 @@ class SearchForRegular extends React.Component{
         try{
         let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${this.props.id}?key=${key}`)
         this.setState({wordInfo: getWord.data[0]});
+        // }
         console.log(this.state.wordInfo);
     }
         catch(error){
@@ -25,7 +26,7 @@ class SearchForRegular extends React.Component{
     }
     
     checkIfExist(){
-        if (this.state.wordInfo===""){
+        if (this.state.wordInfo===""|| this.state.wordInfo==undefined){
             return <p>Word information not found</p>
         }
         else{
