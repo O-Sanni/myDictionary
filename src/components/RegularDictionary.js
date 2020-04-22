@@ -6,16 +6,32 @@ class RegularDictionary extends React.Component{
   constructor(props){
       super(props);
       this.state={
-          searchWord: ""
+          searchWord: "",
+          search: false
       }
       this.getWordHandler=this.getWordHandler.bind(this);
-      this.onSubmit=this.onSubmit.bind(this);
+      this.submitButton=this.submitButton.bind(this);
   }  
-  getWordHandler
+  getWordHandler(event){
+      event.preventDefault();
+      this.setState({searchWord: event.target.value})
+  }
+  submitButton(event){
+    event.preventDefault();
+    this.setState({search: true});
+ 
+  }
+
    render(){
         return (
         <div>
-         <SearchForRegular id={this.searchWord}/>
+        <form onSubmit={this.submitButton}>
+            <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+            <input type="submit" />
+        </form>
+        <div id="searchResultRegular">
+       {this.state.search ? (<SearchForRegular id={this.state.searchWord} />) : "Please enter word to start a search"}
+        </div>
         </div>)
    }  
 }
