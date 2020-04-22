@@ -1,26 +1,33 @@
 import React from "react";
-import SearchForMedicalDictionary from "./SerachForMedicalDictionary"
+import Translation from "./Translation";
+
 
 
 const initialState="";
 
-class MedicalDictionary extends React.Component{
+class TranslationPage extends React.Component{
   constructor(props){
       super(props);
       this.state={
-          searchWord:initialState,
-          search: false
+          textTranslate: initialState,
+          textInput: false,
+          langToTranslate: "en"
       }
-      this.getWordHandler=this.getWordHandler.bind(this);
+      this.handleTextTranslate=this.handleTextTranslate.bind(this);
+      this.handleLanguage = this.handleLanguage.bind(this);
       this.submitButton=this.submitButton.bind(this);
   }  
-  getWordHandler(event){
+  handleTextTranslate(event){
       event.preventDefault();
-      this.setState({searchWord: event.target.value})
+      this.setState({textTranslate: event.target.value})
+  }
+  handleLanguage(event){
+      event.preventDefault();
+      this.setState({langToTranslate})
   }
   submitButton(event){
     event.preventDefault();
-    this.setState({search: true});
+    this.setState({textInput: true});
   }
 
    render(){
@@ -38,4 +45,4 @@ class MedicalDictionary extends React.Component{
    }  
 }
 
-export default MedicalDictionary;
+export default TranslationPage;

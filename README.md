@@ -12,4 +12,8 @@
 ## API Sources
 
     1. https://www.dictionaryapi.com/
-    2. https://glosbe.com/
+    2. https://tech.yandex.com/translate/doc/dg/reference/translate-docpage/#JSON
+
+## Sources
+
+    1.https://reactjs.org/docs/forms.html#the-select-tag
