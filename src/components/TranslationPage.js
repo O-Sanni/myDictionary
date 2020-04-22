@@ -75,6 +75,7 @@ class TranslationPage extends React.Component{
         <button type="button" onClick={()=>{this.setState({textTranslate: initialState, textInput: false, langToTranslate: "en"})}}>Clear</button>
         <div>
        {this.state.textInput ? (<Translation text={this.state.textTranslate} language={this.state.langToTranslate} />) : "Please enter text to translate"}
+       <div><a href="http://translate.yandex.com">Powered by Yandex.Translate</a></div>
         </div>
         </div>)
    }  
