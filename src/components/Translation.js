@@ -1,20 +1,22 @@
 import React from "react";
 import axios from "axios";
+import Dropdown from 'react-dropdown';
 
 
 class Translation extends React.Component{
     constructor(props){
         super(props);
         this.state={
-            wordInfo: ""
+            translation: "",
         }
     }
     async getWordInfo(){
-        const key=process.env.REACT_APP_API_KEY_THESAURUS;
+        const key=process.env.REACT_APP_TRANSLATION_API_KEY;
+        console.log(key)
         try{
-        let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${this.props.id}?key=${key}`)
-        this.setState({wordInfo: getWord.data[0]});
-        console.log(this.state.wordInfo);
+        let translated=await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/translate?lang=${this.props.language}&text=${this.props.text}&key=${key}`)
+        this.setState({translation: translated.data});
+        console.log(this.state.translation);
     }
         catch(error){
             console.log(error);
@@ -25,42 +27,43 @@ class Translation extends React.Component{
     }
     
     checkIfExist(){
-        if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined || (typeof this.state.wordInfo!="object")){
-            return <p>Word information not found</p>
+        if (this.state.translation===""){
+            return <p>Cannot translate</p>
         }
         else{
-            let gramFunction=this.state.wordInfo.fl;
-            gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
-            let definition=this.state.wordInfo.shortdef.map((res,index)=>{
-                return <p id={index+50}>{index+1}. {res}</p>})
-            let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{
+           
+            // let gramFunction=this.state.wordInfo.fl;
+            // gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
+            // let definition=this.state.wordInfo.shortdef.map((res,index)=>{
+            //     return <p id={index+50}>{index+1}. {res}</p>})
+            // let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{
                 
-                return ( <div id={index+30}>{index+1}. {res.join(", ")}</div> )
-            });
-            let antonyms=this.state.wordInfo.meta.ants.map((res,index)=>{
+            //     return ( <div id={index+30}>{index+1}. {res.join(", ")}</div> )
+            // });
+            // let antonyms=this.state.wordInfo.meta.ants.map((res,index)=>{
                 
-                return ( <div id={index+20}>{index+1}. {res.join(", ")}</div> )
-            });
+            //     return ( <div id={index+20}>{index+1}. {res.join(", ")}</div> )
+            // });
 
-            return <div>
-               <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
-                    <p>Gramatical Function: {gramFunction}</p>
-                     <h3>Definition(s):</h3>
-                    <div> {definition}</div>
-                    <h3>Synonyms:</h3>
-                    {synonyms}
-                    <h3>Antonyms:</h3>
-                    {antonyms}
+            // return <div>
+            //    <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
+            //         <p>Gramatical Function: {gramFunction}</p>
+            //          <h3>Definition(s):</h3>
+            //         <div> {definition}</div>
+            //         <h3>Synonyms:</h3>
+            //         {synonyms}
+            //         <h3>Antonyms:</h3>
+            //         {antonyms}
                 
-                   
-             </div>
+              console.log(this.state.translation.text[0])   
+            //  </div>
         }
     }
     render(){
         return(<div>
-       {/* {this.checkIfExist()} */}
+       {this.checkIfExist()}
         </div>)
     }
 }
 
-export default SearchForRegular;
+export default Translation;
