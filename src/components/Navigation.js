@@ -29,7 +29,7 @@ function Navigation(){
                 <Route exact path="/" component={MainPage}></Route>
                 <Route exact path="/medical_dictionary" component={MedicalDictionary}></Route>
                 <Route exact path="/thesaurus" component={RegularDictionary}></Route>
-                <Route exact path="/translation" cmponent={TranslationPage} ></Route>
+                <Route exact path="/translation" component={TranslationPage} ></Route>
             </Switch>
         </Router>
     )
