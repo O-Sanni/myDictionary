@@ -72,9 +72,9 @@ class TranslationPage extends React.Component{
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <button type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
+        <button type="button" onClick={()=>{this.setState({textTranslate: initialState, textInput: false, langToTranslate: "en"})}}>Clear</button>
         <div>
-       {this.state.search ? (<SearchForMedicalDictionary id={this.state.searchWord} />) : "Please enter word to start a search"}
+       {this.state.textInput ? (<Translation text={this.state.textTranslate} language={this.state.langToTranslate} />) : "Please enter text to translate"}
         </div>
         </div>)
    }  
