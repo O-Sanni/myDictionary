@@ -35,8 +35,12 @@ class MedicalDictionary extends React.Component{
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
         </form>
+        {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
         <div>
+        {/* by cleaking submit button we are changing the state of search , when search is true we are calling 
+        <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
+        if the search is false just return the phrase */}
        {this.state.search ? (<SearchForMedicalDictionary id={this.state.searchWord} />) : "Please enter word to start a search"}
         </div>
         </div>)
