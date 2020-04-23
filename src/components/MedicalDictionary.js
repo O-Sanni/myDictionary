@@ -12,9 +12,11 @@ class MedicalDictionary extends React.Component{
           searchWord:initialState,
           search: false
       }
+      //bind my button and input handler in order to use it and manipulate the state
       this.getWordHandler=this.getWordHandler.bind(this);
       this.submitButton=this.submitButton.bind(this);
   }  
+  //wordHandler 
   getWordHandler(event){
       event.preventDefault();
       this.setState({searchWord: event.target.value})
