@@ -11,7 +11,7 @@ class Translation extends React.Component{
             translation: "",
         }
     }
-    //get
+    //getTranslationInfo will call axios.get to get a translation from the API and setState with the translation
     async getTranslationInfo(){
         const key=process.env.REACT_APP_TRANSLATION_API_KEY;
         try{
@@ -26,11 +26,13 @@ class Translation extends React.Component{
     componentDidMount(){
         this.getTranslationInfo();
     }
-    
+    //checkIfExist will check if user input text for translation and the this.state.translate not empty
     checkIfExist(){
         if (this.state.translation===""){
-        
+            return;
         }
+        //if this.state.translation id not empty it will return translated text together with 
+        //"Powered by Tandex.Translate", as was requested on the website
         else{
     return(
            <div>
