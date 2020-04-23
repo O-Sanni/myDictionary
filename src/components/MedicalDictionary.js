@@ -16,20 +16,22 @@ class MedicalDictionary extends React.Component{
       this.getWordHandler=this.getWordHandler.bind(this);
       this.submitButton=this.submitButton.bind(this);
   }  
-  //wordHandler 
+  //wordHandler will update the state of the searchWord , the word which user want to search
   getWordHandler(event){
       event.preventDefault();
       this.setState({searchWord: event.target.value})
   }
+  //submitButton function will setState 
   submitButton(event){
-    event.preventDefault();
-    this.setState({search: true});
+    event.preventDefault();// prevent restart of the page 
+    this.setState({search: true}); //set search to true, thats means that user inputed value for search
   }
 
    render(){
         return (
-        <div id="mainDivMedicalDictionary">
+        <div id="mainDivMedicalDictionary"> 
         <form onSubmit={this.submitButton}>
+        {/* <input /> will have the event  */}
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
         </form>
