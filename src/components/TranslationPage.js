@@ -37,21 +37,21 @@ class TranslationPage extends React.Component{
         <div id="main-div-transl-page">
         <form id="form-transl-page" onSubmit={this.submitButton}>
             <textarea id="textarea-transl" type="text" value={this.state.textTranslate} onChange={this.handleTextTranslate} />
-        <label> 
+        <label id="select-lable"> 
         {/* <label> will hold the list of the availiable languages for translation */}
             Please choose language to translate
-            <select value={this.state.value} onChange={this.handleLanguage}>
-              <option value="en">English</option>
-              <option value="ar">Arabic</option>
-              <option value="be">Belarusian</option>
-              <option value="bn">Bengali</option>
-             <option value="zh">Chinese</option> 
-             <option value="nl">Dutch</option>
-             <option value="fr">French</option>
-              <option value="ka">Georgian</option>
-               <option value="de">German</option>
-              <option value="el">Greek</option>
-              <option value="ht">Haitian (Creole)</option> 
+            <select id="select-transl" value={this.state.value} onChange={this.handleLanguage}>
+              <option className="options-lang-class" value="en">English</option>
+              <option className="options-lang-class" value="ar">Arabic</option>
+              <option className="options-lang-class" value="be">Belarusian</option>
+              <option className="options-lang-class" value="bn">Bengali</option>
+             <option className="options-lang-class" value="zh">Chinese</option> 
+             <option className="options-lang-class" value="nl">Dutch</option>
+             <option className="options-lang-class" value="fr">French</option>
+              <option className="options-lang-class" value="ka">Georgian</option>
+               <option className="options-lang-class" value="de">German</option>
+              <option className="options-lang-class" value="el">Greek</option>
+              <option className="options-lang-class" value="ht">Haitian (Creole)</option> 
              <option value="he">Hebrew</option> 
              <option value="hi">Hindi</option>
               <option value="hu">Hungarian</option>
