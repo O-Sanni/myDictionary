@@ -52,10 +52,10 @@ class TranslationPage extends React.Component{
                <option className="options-lang-class" value="de">German</option>
               <option className="options-lang-class" value="el">Greek</option>
               <option className="options-lang-class" value="ht">Haitian (Creole)</option> 
-             <option value="he">Hebrew</option> 
-             <option value="hi">Hindi</option>
-              <option value="hu">Hungarian</option>
-            <option value="it">Italian</option>
+             <option className="options-lang-class" value="he">Hebrew</option> 
+             <option className="options-lang-class" value="hi">Hindi</option>
+              <option className="options-lang-class" value="hu">Hungarian</option>
+            <option className="options-lang-class"value="it">Italian</option>
             <option value="ja">Japanese</option>  
              <option value="kk">Kazakh</option> 
             <option value="ko">Korean</option>
