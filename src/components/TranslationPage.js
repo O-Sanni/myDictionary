@@ -56,11 +56,11 @@ class TranslationPage extends React.Component{
              <option className="options-lang-class" value="hi">Hindi</option>
               <option className="options-lang-class" value="hu">Hungarian</option>
             <option className="options-lang-class"value="it">Italian</option>
-            <option value="ja">Japanese</option>  
-             <option value="kk">Kazakh</option> 
-            <option value="ko">Korean</option>
-             <option value="la">Latin</option>
-              <option value="mn">Mongolian</option>
+            <option className="options-lang-class" value="ja">Japanese</option>  
+             <option className="options-lang-class" value="kk">Kazakh</option> 
+            <option className="options-lang-class" value="ko">Korean</option>
+             <option className="options-lang-class" value="la">Latin</option>
+              <option className="options-lang-class" value="mn">Mongolian</option>
               <option value="no">Norwegian</option>
              <option value="fa">Persian</option>
               <option value="pl">Polish</option>
