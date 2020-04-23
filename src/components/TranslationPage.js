@@ -26,7 +26,7 @@ class TranslationPage extends React.Component{
       event.preventDefault(); //prevent default behavior after you choose language
       this.setState({langToTranslate: event.target.value})
   }
-  //will setState text
+  //will setState textInput to true in order to make a translation
   submitButton(event){
     event.preventDefault();
     this.setState({textInput: true});
