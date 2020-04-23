@@ -2,10 +2,9 @@ import React from "react";
 import {Route, Switch, Link , BrowserRouter as Router} from "react-router-dom";
 import MainPage from "./MainPage"
 import MedicalDictionary from "./MedicalDictionary"
-import YranslationPage from "./TranslationPage"
 import RegularDictionary from "./RegularDictionary"
 import TranslationPage from "./TranslationPage";
-
+//navigation component will have 4 links and 4 route each route will call exact path for specific component
 function Navigation(){
     return (
         <Router>

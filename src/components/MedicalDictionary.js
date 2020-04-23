@@ -3,7 +3,7 @@ import SearchForMedicalDictionary from "./SerachForMedicalDictionary"
 
 
 
-const initialState="";
+const initialState=""; //create global variable with initial state empty wtring to using it over again in my code
 
 class MedicalDictionary extends React.Component{
   constructor(props){
