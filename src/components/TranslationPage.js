@@ -70,8 +70,8 @@ class TranslationPage extends React.Component{
             <option className="options-lang-class" value="tg">Tajik</option>
               <option className="options-lang-class" value="tr">Turkish</option>
               <option className="options-lang-class" value="uz">Uzbek</option>
-              <option value="uk">Ukrainian</option>
-              <option value="vi">Vietnamese</option>
+              <option className="options-lang-class" value="uk">Ukrainian</option>
+              <option className="options-lang-class" value="vi">Vietnamese</option>
             </select>
           </label>
           <input type="submit" value="Submit" />
