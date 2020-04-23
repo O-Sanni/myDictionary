@@ -32,10 +32,9 @@ class SearchForRegular extends React.Component{
             let gramFunction=this.state.wordInfo.fl;
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
             let definition=this.state.wordInfo.shortdef.map((res,index)=>{
-                return <p id={index+50}>{index+1}. {res}</p>})
-            let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{
-                
-                return ( <div id={index+30}>{index+1}. {res.join(", ")}</div> )
+                return <p className="class-definitions" id={"difitition-regular-id-"+index}>{index+1}. {res}</p>})
+            let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{  
+                return ( <div className="div-synonyms-class" id={"div-synonyms-"+index+30}>{index+1}. {res.join(", ")}</div> )
             });
             let antonyms=this.state.wordInfo.meta.ants.map((res,index)=>{
                 
