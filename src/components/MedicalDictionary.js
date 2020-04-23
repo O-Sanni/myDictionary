@@ -2,6 +2,7 @@ import React from "react";
 import SearchForMedicalDictionary from "./SerachForMedicalDictionary"
 
 
+
 const initialState="";
 
 class MedicalDictionary extends React.Component{
@@ -25,7 +26,7 @@ class MedicalDictionary extends React.Component{
 
    render(){
         return (
-        <div>
+        <div id="mainDivMedicalDictionary">
         <form onSubmit={this.submitButton}>
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
