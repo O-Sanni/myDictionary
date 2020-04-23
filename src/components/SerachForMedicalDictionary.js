@@ -46,6 +46,7 @@ class SearchForMedicalDictionary extends React.Component{
                     <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
                     {/* print gramatical FUnction of the word */}
                     <p>Gramatical Function: {gramFunction}</p>
+                    {/* print separate <div> with defenitions */}
                     <p>Definition(s):</p>
                     <div> {info}</div>
                    
