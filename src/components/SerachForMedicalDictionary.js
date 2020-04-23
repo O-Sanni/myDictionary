@@ -26,13 +26,16 @@ class SearchForMedicalDictionary extends React.Component{
     componentDidMount(){
         this.getWordInfo();
     }
-    //checkIf
+    //checkIfExist so it would check if the state is empty or the search results meet specific creteria before return the 
+    //result to user
     checkIfExist(){
+        //check if wordInfo state empty, or it does not much user search, or it undefined or it is not a string
+        //if so it would return the <p> with specific text
         if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined ||(typeof this.state.wordInfo!="object")){
             return <p>Word information not found</p>
         }
         else{
-            let gramFunction=this.state.wordInfo.fl;
+            let gramFunction=this.state.wordInfo.fl; //hold gramatical function for 
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1);
             let info=this.state.wordInfo.shortdef.map((res,index)=>{
                 return <p id={index+10}>{index+1}. {res}</p>})
