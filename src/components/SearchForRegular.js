@@ -41,7 +41,7 @@ class SearchForRegular extends React.Component{
             });
 
             return <div>
-               <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
+               <p id="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p>
                     <p>Gramatical Function: {gramFunction}</p>
                      <h3>Definition(s):</h3>
                     <div> {definition}</div>
