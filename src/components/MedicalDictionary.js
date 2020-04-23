@@ -30,9 +30,9 @@ class MedicalDictionary extends React.Component{
    render(){
         return (
         <div className="main-div-dictionaries"> 
-        <form onSubmit={this.submitButton} >
+        <form className="form-dictionaries" onSubmit={this.submitButton} >
         {/* <input /> will have the event  value, such as word that user want to search*/}
-            <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+            <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
         </form>
         {/* clear button will clear the state, put values to initial state in order to do a new search */}

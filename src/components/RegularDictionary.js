@@ -27,10 +27,11 @@ class RegularDictionary extends React.Component{
    render(){
         return (
         <div className="main-div-dictionaries">
-        <form onSubmit={this.submitButton}>
-            <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+        <form className="form-dictionaries"onSubmit={this.submitButton} >
+            <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
         </form>
+        {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button type="button" onClick={()=>{this.setState({searchWord: "", search:false})}}>Clear</button>
         <div>
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
