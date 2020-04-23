@@ -20,7 +20,7 @@ function Navigation(){
                     <li className="nav-lists">
                         <Link to="/thesaurus">Thesaurus</Link>
                     </li>
-                    <li>
+                    <li className="nav-lists">
                         <Link to="/translation">Translation</Link>
                     </li>
                 </ul>
