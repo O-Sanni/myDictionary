@@ -2,7 +2,7 @@ import React from "react";
 import Translation from "./Translation";
 
 
-const initialState="";
+const initialState=""; //constant value to use within the code
 
 class TranslationPage extends React.Component{
   constructor(props){
@@ -10,7 +10,7 @@ class TranslationPage extends React.Component{
       this.state={
           textTranslate: initialState,
           textInput: false,
-          langToTranslate: "en"
+          langToTranslate: "en" //initial translation language to translate to is English
       }
       this.handleTextTranslate=this.handleTextTranslate.bind(this);
       this.handleLanguage = this.handleLanguage.bind(this);
