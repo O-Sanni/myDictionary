@@ -9,15 +9,15 @@ import TranslationPage from "./TranslationPage";
 function Navigation(){
     return (
         <Router>
-            <nav>
-                <ul>
-                    <li>
+            <nav id="navigation">
+                <ul id="nav-ul">
+                    <li className="nav-lists">
                         <Link to="/">Home Page</Link>
                     </li>
-                    <li>
+                    <li className="nav-lists">
                         <Link to="/medical_dictionary">Medical Dictionary</Link>
                     </li>
-                    <li>
+                    <li className="nav-lists">
                         <Link to="/thesaurus">Thesaurus</Link>
                     </li>
                     <li>
