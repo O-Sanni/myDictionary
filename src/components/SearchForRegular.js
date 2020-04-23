@@ -26,7 +26,7 @@ class SearchForRegular extends React.Component{
     
     checkIfExist(){
         if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined || (typeof this.state.wordInfo!="object")){
-            return <p>Word information not found</p>
+            return <p className="p-word-not-found">Word information not found</p>
         }
         else{
             let gramFunction=this.state.wordInfo.fl;
@@ -40,17 +40,16 @@ class SearchForRegular extends React.Component{
                 return ( <p id={"p-antonyms"+index}>{index+1}. {res.join(", ")}</p> )
             });
 
-            return <div>
-               <p id="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p>
-                    <p id="p-gram-func">Gramatical Function: {gramFunction}</p>
+            return <div className="info-div-dictionaries">
+               <p className="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p>
+                    <p className="p-gram-func">Gramatical Function: {gramFunction}</p>
                      <h3 id="h3-def-regular">Definition(s):</h3>
                     <div id="div-def-regular"> {definition}</div>
                     <h3 id="h3-synonyms-regular">Synonyms:</h3>
                     {synonyms}
                     <h3 id="h3-antonyms-regular">Antonyms:</h3>
                     {antonyms}
-                
-                   
+                     
              </div>
         }
     }

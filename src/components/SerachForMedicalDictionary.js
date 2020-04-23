@@ -32,23 +32,23 @@ class SearchForMedicalDictionary extends React.Component{
         //check if wordInfo state empty, or it does not much user search, or it undefined or it is not a string
         //if so it would return the <p> with specific text
         if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined ||(typeof this.state.wordInfo!="object")){
-            return <p>Word information not found</p>
+            return <p className="p-word-not-found">Word information not found</p>
         }
         else{
             let gramFunction=this.state.wordInfo.fl; //hold gramatical function for word
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1); //make the first letter of gramatical function of the word Capital
             let info=this.state.wordInfo.shortdef.map((res,index)=>{ //will map thrue a wordInfo.shortdef to return all the definitions of the word
                 return <p className="class-definitions" id={"difitition-medical-id-"+index}>{index+1}. {res}</p>}) //return separate <p> for each definition
-            return <div>
+            return <div className="info-div-dictionaries">
             {/* print search word in upper cases */}
-                    <p>{this.state.wordInfo.meta.id.toUpperCase()}</p> 
+                    <p className="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p> 
                     {/* print the pronunciation of the word */}
-                    <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
+                    <p id="p-pronunciation">Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
                     {/* print gramatical FUnction of the word */}
-                    <p>Gramatical Function: {gramFunction}</p>
+                    <p className="p-gram-func">Gramatical Function: {gramFunction}</p>
                     {/* print separate <div> with definitions */}
-                    <p>Definition(s):</p>
-                    <div> {info}</div>
+                    <h3 id="h3-def-medical">Definition(s):</h3>
+                    <div id="div-def-medical"> {info}</div>
                    
                   </div>
         }
