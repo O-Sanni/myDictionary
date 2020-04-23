@@ -36,13 +36,13 @@ class Translation extends React.Component{
         else{
     return(
            <div>
-               <p>{this.state.translation.text}</p>
-               <div><a href="http://translate.yandex.com">Powered by Yandex.Translate</a></div>
+               <p id="p-trabslation-txt">{this.state.translation.text}</p>
+               <div id="div-pow-by"><a href="http://translate.yandex.com">Powered by Yandex.Translate</a></div>
            </div>)
         }
     }
     render(){
-        return(<div>
+        return(<div >
         {/* will call checkifExists() function */}
        {this.checkIfExist()}
         </div>)
