@@ -37,7 +37,7 @@ class SearchForMedicalDictionary extends React.Component{
         else{
             let gramFunction=this.state.wordInfo.fl; //hold gramatical function for word
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1); //make the first letter of gramatical function of the word Capital
-            let info=this.state.wordInfo.shortdef.map((res,index)=>{ //
+            let info=this.state.wordInfo.shortdef.map((res,index)=>{ //will map thrue a wordInfo.shortdef to return all the definitions of the word
                 return <p id={index+10}>{index+1}. {res}</p>})
             return <div>
                     <p>{this.state.wordInfo.meta.id.toUpperCase()}</p>
