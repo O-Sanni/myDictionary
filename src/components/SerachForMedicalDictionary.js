@@ -46,7 +46,7 @@ class SearchForMedicalDictionary extends React.Component{
                     <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
                     {/* print gramatical FUnction of the word */}
                     <p>Gramatical Function: {gramFunction}</p>
-                    {/* print separate <div> with defenitions */}
+                    {/* print separate <div> with definitions */}
                     <p>Definition(s):</p>
                     <div> {info}</div>
                    
@@ -55,6 +55,7 @@ class SearchForMedicalDictionary extends React.Component{
     }
     render(){
         return(<div>
+        {/* call checkIfExist function and return the result */}
        {this.checkIfExist()}
         </div>)
     }

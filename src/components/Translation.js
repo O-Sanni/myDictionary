@@ -11,7 +11,8 @@ class Translation extends React.Component{
             translation: "",
         }
     }
-    async getWordInfo(){
+    //get
+    async getTranslationInfo(){
         const key=process.env.REACT_APP_TRANSLATION_API_KEY;
         try{
         let translated=await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/translate?lang=${this.props.language}&text=${this.props.text}&key=${key}`)
@@ -23,7 +24,7 @@ class Translation extends React.Component{
         }
     }
     componentDidMount(){
-        this.getWordInfo();
+        this.getTranslationInfo();
     }
     
     checkIfExist(){
