@@ -1,14 +1,13 @@
 import React from "react";
 
 
-class MainPage extends React.Component{
-    render(){
+function MainPage (){
+    
         return(
             <div>
                 <h1>Welcome to myDictionary</h1>
             </div>
         )
-    }
 }
 
 export default MainPage;
