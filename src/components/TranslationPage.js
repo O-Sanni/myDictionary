@@ -16,14 +16,17 @@ class TranslationPage extends React.Component{
       this.handleLanguage = this.handleLanguage.bind(this);
       this.submitButton=this.submitButton.bind(this);
   }  
+  //will setState for textTranslate
   handleTextTranslate(event){
-      event.preventDefault();
-      this.setState({textTranslate: event.target.value})
+      event.preventDefault();//prevent the default restart of the page when you enter text to translate
+      this.setState({textTranslate: event.target.value}) //setState for the textTranslate
   }
+  //will setState for languageToTranslate 
   handleLanguage(event){
-      event.preventDefault();
+      event.preventDefault(); //prevent default behavior after you choose language
       this.setState({langToTranslate: event.target.value})
   }
+  //will setState text
   submitButton(event){
     event.preventDefault();
     this.setState({textInput: true});
