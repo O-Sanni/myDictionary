@@ -26,7 +26,7 @@ class RegularDictionary extends React.Component{
 
    render(){
         return (
-        <div>
+        <div className="main-div-dictionaries">
         <form onSubmit={this.submitButton}>
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />

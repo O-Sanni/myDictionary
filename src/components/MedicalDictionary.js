@@ -29,8 +29,8 @@ class MedicalDictionary extends React.Component{
 
    render(){
         return (
-        <div id="mainDivMedicalDictionary"> 
-        <form onSubmit={this.submitButton}>
+        <div className="main-div-dictionaries"> 
+        <form onSubmit={this.submitButton} >
         {/* <input /> will have the event  value, such as word that user want to search*/}
             <input type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <input type="submit" />
