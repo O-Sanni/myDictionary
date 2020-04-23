@@ -42,12 +42,12 @@ class SearchForRegular extends React.Component{
 
             return <div>
                <p id="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p>
-                    <p>Gramatical Function: {gramFunction}</p>
-                     <h3>Definition(s):</h3>
-                    <div> {definition}</div>
-                    <h3>Synonyms:</h3>
+                    <p id="p-gram-func">Gramatical Function: {gramFunction}</p>
+                     <h3 id="h3-def-regular">Definition(s):</h3>
+                    <div id="div-def-regular"> {definition}</div>
+                    <h3 id="h3-synonyms-regular">Synonyms:</h3>
                     {synonyms}
-                    <h3>Antonyms:</h3>
+                    <h3 id="h3-antonyms-regular">Antonyms:</h3>
                     {antonyms}
                 
                    
