@@ -4,8 +4,8 @@ import React from "react";
 function MainPage (){
     
         return(
-            <div>
-                <h1>Welcome to myDictionary</h1>
+            <div id="main-div-mainPage">
+                <h1 id="h1-mainPage">Welcome to myDictionary</h1>
             </div>
         )
 }
