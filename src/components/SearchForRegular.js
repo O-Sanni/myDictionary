@@ -55,7 +55,8 @@ class SearchForRegular extends React.Component{
         }
     }
     render(){
-        return(<div>
+        return(
+        <div className="main-div-dictionaries">
        {this.checkIfExist()}
         </div>)
     }

@@ -54,7 +54,7 @@ class SearchForMedicalDictionary extends React.Component{
         }
     }
     render(){
-        return(<div>
+        return(<div className="main-div-dictionaries">
         {/* call checkIfExist function and return the result */}
        {this.checkIfExist()}
         </div>)
