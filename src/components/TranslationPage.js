@@ -34,9 +34,9 @@ class TranslationPage extends React.Component{
 
    render(){
         return (
-        <div>
-        <form onSubmit={this.submitButton}>
-            <textarea type="text" value={this.state.textTranslate} onChange={this.handleTextTranslate} />
+        <div id="main-div-transl-page">
+        <form id="form-transl-page" onSubmit={this.submitButton}>
+            <textarea id="textarea-transl" type="text" value={this.state.textTranslate} onChange={this.handleTextTranslate} />
         <label> 
         {/* <label> will hold the list of the availiable languages for translation */}
             Please choose language to translate
