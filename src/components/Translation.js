@@ -43,6 +43,7 @@ class Translation extends React.Component{
     }
     render(){
         return(<div>
+        {/* will call checkifExists() function */}
        {this.checkIfExist()}
         </div>)
     }
