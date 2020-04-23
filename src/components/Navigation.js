@@ -4,6 +4,7 @@ import MainPage from "./MainPage"
 import MedicalDictionary from "./MedicalDictionary"
 import RegularDictionary from "./RegularDictionary"
 import TranslationPage from "./TranslationPage";
+
 //navigation component will have 4 links and 4 route each route will call exact path for specific component
 function Navigation(){
     return (
@@ -25,7 +26,8 @@ function Navigation(){
                 </ul>
             </nav>
             <Switch>
-                <Route exact path="/" component={MainPage}></Route>
+            {/* Route should have exact path in order to show correct page */}
+                <Route exact path="/" component={MainPage}></Route> 
                 <Route exact path="/medical_dictionary" component={MedicalDictionary}></Route>
                 <Route exact path="/thesaurus" component={RegularDictionary}></Route>
                 <Route exact path="/translation" component={TranslationPage} ></Route>
