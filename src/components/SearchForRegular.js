@@ -34,11 +34,10 @@ class SearchForRegular extends React.Component{
             let definition=this.state.wordInfo.shortdef.map((res,index)=>{
                 return <p className="class-definitions" id={"difitition-regular-id-"+index}>{index+1}. {res}</p>})
             let synonyms=this.state.wordInfo.meta.syns.map((res,index)=>{  
-                return ( <div className="div-synonyms-class" id={"div-synonyms-"+index+30}>{index+1}. {res.join(", ")}</div> )
+                return ( <p className="p-synonyms-class" id={"div-synonyms-"+index+30}>{index+1}. {res.join(", ")}</p> )
             });
             let antonyms=this.state.wordInfo.meta.ants.map((res,index)=>{
-                
-                return ( <div id={index+20}>{index+1}. {res.join(", ")}</div> )
+                return ( <p id={"p-antonyms"+index}>{index+1}. {res.join(", ")}</p> )
             });
 
             return <div>
