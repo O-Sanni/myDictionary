@@ -40,9 +40,11 @@ class SearchForMedicalDictionary extends React.Component{
             let info=this.state.wordInfo.shortdef.map((res,index)=>{ //will map thrue a wordInfo.shortdef to return all the definitions of the word
                 return <p id={index+10}>{index+1}. {res}</p>}) //return separate <p> for each definition
             return <div>
-            {/* return search word in upper cases */}
+            {/* print search word in upper cases */}
                     <p>{this.state.wordInfo.meta.id.toUpperCase()}</p> 
+                    {/* print the pronunciation of the word */}
                     <p>Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
+                    {/* print gramatical FUnction of the word */}
                     <p>Gramatical Function: {gramFunction}</p>
                     <p>Definition(s):</p>
                     <div> {info}</div>
