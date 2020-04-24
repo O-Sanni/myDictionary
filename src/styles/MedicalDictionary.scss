@@ -19,7 +19,7 @@
    @include displaySizes();
    flex-direction: column;
    justify-content: center;
-   margin-top: -20px;
+   margin-top: -50px;
    padding: 25px;
 }
 
@@ -31,19 +31,19 @@ font-family:$barkshire;
 
 }
 #p-gram-func-med{
-margin-top: -30px;
-font-family:$oleo;
+margin-top: -45px;
+font-family:$barkshire;
 font-weight: lighter;
 font-size:35px;
 }
 #def-medical{
    margin-top: -20px;
-   font-family:$oleo;
+   font-family:$barkshire;
    font-weight: lighter;
    font-size:35px;
 }
-#div-def-medical{
+.class-definitions-med{
    font-family:$oleo;
-   font-weight:lighter;
+  font-weight: lighter;
    font-size:25px;
 }
