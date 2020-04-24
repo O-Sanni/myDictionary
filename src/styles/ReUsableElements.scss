@@ -12,7 +12,16 @@
     height: 800px;
 }
 
-$border:ridge 4px #E8C89F;
+@mixin syn-ant-def-regular(){
+    font-family: $courgette;
+    font-size: 20px;
+    margin-top:-10px;
+    font-weight: lighter;
+}
+@mixin def-syn-anton-name(){
+    font-size: 25px;
+    font-family:$playball ;
+}
 
 // Fonts:
 
@@ -26,6 +35,6 @@ $playball: 'Playball', cursive;
 $barkshire: 'Berkshire Swash', cursive;
 $niconne: 'Niconne', cursive;
 
-// Colors
-
+// Colors and borders
 $main-page-text: rgb(58, 37, 11);
+$border:ridge 4px #E8C89F;

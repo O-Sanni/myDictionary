@@ -43,7 +43,7 @@ class RegularDictionary extends React.Component{
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
         <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
         if the search is false just return the phrase */}
-       {this.state.search ? (<SearchForRegular id={this.state.searchWord} />) : "Please enter word to start a search"}
+       {this.state.search ? (<SearchForRegular id={this.state.searchWord} />) : ""}
         </div>
         </div>)
    }  

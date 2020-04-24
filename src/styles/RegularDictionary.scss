@@ -4,3 +4,36 @@
     @include back-ground-setting();
     background-image: url(../assets/dictionary.png);
 }
+
+.class-definitions-regular{
+@include syn-ant-def-regular();
+}
+.p-synonyms-class{
+    @include syn-ant-def-regular();
+}
+.p-antonyms-class{
+    @include syn-ant-def-regular();
+}
+
+#p-word-name-regular{
+    font-size:45px;
+    font-family:$playball ;
+    margin-top: 10px;
+}
+#p-gram-func-regular{
+    font-size:35px;
+    font-family:$playball ; 
+    margin-top:-45px;
+}
+#h3-def-regular{
+    margin-top:-25px;
+    @include def-syn-anton-name();
+    
+}
+#h3-synonyms-regular{
+    @include def-syn-anton-name();
+   
+}
+#h3-antonyms-regular{
+    @include def-syn-anton-name();
+}
