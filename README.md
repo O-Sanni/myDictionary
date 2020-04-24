@@ -4,7 +4,9 @@
 
 ## Wireframe
 ![wireframe](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200421-125307_p1.jpg)
-![wireframe](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200421-125307_p0.jpg)
+![wireframe](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200424-170016_p0.jpg)
+![wireframe](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200424-170016_p1.jpg)
+![wireframe](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200424-170016_p2.jpg)
 
 ## Components
 ![alt text](https://github.com/OlgaSannikov/myDictionary/blob/master/src/assets/20200421-125307_p2.jpg)
