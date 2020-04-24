@@ -20,20 +20,43 @@
 }
 #select-lable{
     @include displaySizes();
+    margin-top: 25px;
+    font-size:25px;
+    font-family:$barkshire;
     flex-direction: column;  
 }
 #select-transl{
     width:150px;
+    margin-top:10px;
+    font-family: $merienda;
+    font-size:15px;
     background-image: url("../assets/buttons.jpg");
 }
-
+.options-lang-class{
+    font-family: $merienda;
+    font-size:15px;
+}
 #textarea-transl{
     padding:25px;
     outline: none;
     resize: none;
     width:600px;
     height: 150px;
-    font-size: 35px;
-    font-family:$niconne;
+    font-size: 25px;
+    font-family:$merienda;
     background-color:rgba(229, 212, 170, 0.461);
 }
+#input-submit-transl{
+    background-image: url("../assets/buttons.jpg");
+}
+#clear-button-transl{
+    margin-top: 15px;
+    margin-left: 15px;
+    background-image: url("../assets/buttons.jpg");
+    width: 50px;
+    height: auto;
+}
+#buttons-translate{
+    margin-left: -530px;
+}
+

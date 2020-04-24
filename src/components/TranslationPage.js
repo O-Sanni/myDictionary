@@ -76,11 +76,12 @@ class TranslationPage extends React.Component{
               <option className="options-lang-class" value="vi">Vietnamese</option>
             </select>
           </label>
+          <div id="buttons-translate">
           <input id="input-submit-transl" type="submit" value="Submit" />
-        </form>
         {/* clear button will setState to initial values */}
         <button id="clear-button-transl" type="button" onClick={()=>{this.setState({textTranslate: initialState, textInput: false})}}>Clear</button>
-        
+        </div>
+        </form>
         <div>
         {/* use ternary operator, if the textInput is true , if the user entered text and press submitt call <Translation /> 
         and send  language and text to Translations*/}
