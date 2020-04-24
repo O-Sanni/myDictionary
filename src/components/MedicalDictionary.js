@@ -40,7 +40,9 @@ class MedicalDictionary extends React.Component{
         <input className="submit-button-dictionaries" type="submit" />
         {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button className="clear-button-dictionaries" type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
-        </div></form>
+        <p className="clear-text">If you need to start new search please press clear</p>
+        </div>
+        </form>
         </div>
         <div className="search-result-dictionaries">
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 

@@ -9,7 +9,9 @@ margin-top: -100px;
 .input-search-dictionaries{
     width: 250px;
     height: auto;
-    font-size: 35px;
+    font-size: 25px;
+    background-image: url("../assets/buttons.jpg");
+    color:rgb(250, 234, 223);
 }
 
 .form-button-dictionaries{
@@ -17,22 +19,37 @@ margin-top: -100px;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-top: 100px;
-    margin-left: 150px;
+    margin-top: 200px;
+    margin-left: 100px;
     border:$border;
     background-image: url(../assets/backgroundText.png);
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
 }
 
 .p-form-dictionaries{
-    font-size: 25px;
+    margin-top:100px;
+    font-size: 30px;
+    font-family: $playball;
+
+}
+.clear-text
+{
+    margin-top: -15px;
+    font-size: 20px;
+    font-family: $playball;
 }
 
 .clear-button-dictionaries{
     margin: 20px;
+    background-image: url("../assets/buttons.jpg");
+
 }
 
+.submit-button-dictionaries{
+ margin-top: -30px;
+ background-image: url("../assets/buttons.jpg");
+}
 
 .search-result-dictionaries{
     @include displaySizes();

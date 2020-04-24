@@ -30,11 +30,12 @@ class RegularDictionary extends React.Component{
         <div className="form-button-dictionaries">
         <form className="form-dictionaries" onSubmit={this.submitButton} >
         <p className="p-form-dictionaries">Please enter word and then press submit</p>
-            <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+            <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
             <div className="button-clear-dictionaries">
             <input className="submit-button-dictionaries" type="submit" />
        {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button className="clear-button-dictionaries"  type="button" onClick={()=>{this.setState({searchWord: "", search:false})}}>Clear</button>
+        <p className="clear-text">If you need to start new search please press clear</p>
         </div>
         </form>
          </div>
