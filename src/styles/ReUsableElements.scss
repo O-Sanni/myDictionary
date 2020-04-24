@@ -1,0 +1,6 @@
+@mixin displaySizes(){
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    border: solid 2px green;
+}
