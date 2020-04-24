@@ -4,6 +4,7 @@ import MainPage from "./MainPage"
 import MedicalDictionary from "./MedicalDictionary"
 import RegularDictionary from "./RegularDictionary"
 import TranslationPage from "./TranslationPage";
+import "../styles/MainPageandNavigation.scss"
 
 //navigation component will have 4 links and 4 route each route will call exact path for specific component
 function Navigation(){

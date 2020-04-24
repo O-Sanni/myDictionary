@@ -1,0 +1,7 @@
+@import 'ReUsableElements';
+
+#main-div-medical{
+   @include displaySizes();
+   background-image: url(../assets/medical.png);
+   @include back-ground-setting();
+}

@@ -1,6 +1,12 @@
 @mixin displaySizes(){
     display:flex;
     flex-wrap:wrap;
-    flex-direction: column;
-    border: solid 2px green;
+   
+}
+
+@mixin back-ground-setting(){
+    background-repeat: no-repeat;
+    background-size: 1500px 750px;
+    width: auto;
+    height:715px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import SearchForMedicalDictionary from "./SerachForMedicalDictionary"
-import "../styles/MedicalDictionarySearch.scss"
+import "../styles/MedicalDictionary.scss"
 
 
 
@@ -30,7 +30,7 @@ class MedicalDictionary extends React.Component{
 
    render(){
         return (
-        <div className="main-div-dictionaries"> 
+        <div id="main-div-medical"> 
         <form className="form-dictionaries" onSubmit={this.submitButton} >
         {/* <input /> will have the event  value, such as word that user want to search*/}
             <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
