@@ -29,9 +29,8 @@ class Translation extends React.Component{
     }
 
     render(){
-        return(<div id="main-div-trasl">
+        return(<div id="main-div-trasl-text">
                <p id="p-trabslation-txt">{this.state.translation.text}</p>
-               <div id="div-pow-by"><a href="http://translate.yandex.com">Powered by Yandex.Translate</a></div>
         </div>)
     }
 }

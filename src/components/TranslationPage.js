@@ -82,11 +82,12 @@ class TranslationPage extends React.Component{
         <button id="clear-button-transl" type="button" onClick={()=>{this.setState({textTranslate: initialState, textInput: false})}}>Clear</button>
         </div>
         </form>
-        <div>
+        <div id="translation-output-div">
         {/* use ternary operator, if the textInput is true , if the user entered text and press submitt call <Translation /> 
         and send  language and text to Translations*/}
        {this.state.textInput ? (<Translation text={this.state.textTranslate} language={this.state.langToTranslate} />) : ""}
         </div>
+        <div id="div-pow-by"><a id="powered-by-a" href="http://translate.yandex.com">Powered by Yandex.Translate</a></div>
         </div>
         </div>)
    }  

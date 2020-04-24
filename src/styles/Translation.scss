@@ -12,7 +12,7 @@
     flex-direction: column;
     align-content: center;
     background-image: url("../assets/backgroundText.png");
-    margin-top: 50px;
+    margin-top: 30px;
     border:$border;
     width:650px;
     height:600px;
@@ -40,6 +40,7 @@
     padding:25px;
     outline: none;
     resize: none;
+    margin-top: -35px;
     width:600px;
     height: 150px;
     font-size: 25px;
@@ -59,4 +60,26 @@
 #buttons-translate{
     margin-left: -530px;
 }
+#translation-output-div{
+    margin-top: 25px;
+background-image: url(../assets/backgroundText.png);
+border:$border;
+width:650px;
+    height: 250px;
+}
+#powered-by-a{
+    font-family: merienda;
+    font-size: 10px;
+    color:rgb(94, 50, 3);
+}
 
+#p-trabslation-txt{
+    font-family:$merienda;
+    font-size: 25px;
+    margin-top: -15px;
+    padding: 20px;
+}
+
+#main-div-trasl-text{
+@include displaySizes();
+}
