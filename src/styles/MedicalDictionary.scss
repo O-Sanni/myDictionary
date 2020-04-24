@@ -19,22 +19,31 @@
    @include displaySizes();
    flex-direction: column;
    justify-content: center;
+   margin-top: -20px;
    padding: 25px;
 }
 
 // Search results
 
-// #p-word-name-medical{
-// font-size: 25px;
-// font
-// }
+#p-word-name-medical{
+font-size: 45px;
+font-family:$barkshire;
 
-// #p-pronunciation{
-
-// }
-// #def-medical{
-
-// }
-// #div-def-medical{
-
-// }
+}
+#p-gram-func-med{
+margin-top: -30px;
+font-family:$oleo;
+font-weight: lighter;
+font-size:35px;
+}
+#def-medical{
+   margin-top: -20px;
+   font-family:$oleo;
+   font-weight: lighter;
+   font-size:35px;
+}
+#div-def-medical{
+   font-family:$oleo;
+   font-weight:lighter;
+   font-size:25px;
+}

@@ -32,9 +32,13 @@ class SearchForMedicalDictionary extends React.Component{
     checkIfExist(){
         //check if wordInfo state empty, or it does not much user search, or it undefined or it is not a string
         //if so it would return the <p> with specific text
-        if (this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || this.state.wordInfo==undefined ||(typeof this.state.wordInfo!="object")){
+        if ( this.state.wordInfo==undefined ){
             return <p className="p-word-not-found">Word information not found</p>
         }
+        else if ( this.state.wordInfo.meta==undefined || this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id ||(typeof this.state.wordInfo!="object")){
+            return <p className="p-word-not-found">Word information not found</p>
+    }
+
         else{
             let gramFunction=this.state.wordInfo.fl; //hold gramatical function for word
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1); //make the first letter of gramatical function of the word Capital
@@ -44,10 +48,11 @@ class SearchForMedicalDictionary extends React.Component{
             <div className="info-div-dictionaries">
             {/* print search word in upper cases */}
                     <p id="p-word-name-medical">{this.state.wordInfo.meta.id.toUpperCase()}</p> 
-                    {/* print the pronunciation of the word */}
-                    <p id="p-pronunciation">Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
+                    {/* print the pronunciation of the word is not availiable for some words, so I did not include it for now
+                    but I might work on it in the future*/}
+                    {/* <p id="p-pronunciation">Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p> */}
                     {/* print gramatical FUnction of the word */}
-                    <p className="p-gram-func">Gramatical Function: {gramFunction}</p>
+                    <p id="p-gram-func-med">Gramatical Function: {gramFunction}</p>
                     {/* print separate <div> with definitions */}
                     <h3 id="def-medical">Definition(s):</h3>
                     <div id="div-def-medical"> {info}</div>
