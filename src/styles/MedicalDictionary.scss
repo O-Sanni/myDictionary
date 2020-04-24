@@ -5,3 +5,36 @@
    background-image: url(../assets/medical.png);
    @include back-ground-setting();
 }
+.search-result-med{
+   @include displaySizes();
+   margin-top: 100px;
+   margin-left: 150px;
+   border:$border;
+   background-image: url(../assets/backgroundText.png);
+   width: 700px;
+   height: 600px;
+}
+
+#search-div{
+   @include displaySizes();
+   flex-direction: column;
+   justify-content: center;
+   padding: 25px;
+}
+
+// Search results
+
+// #p-word-name-medical{
+// font-size: 25px;
+// font
+// }
+
+// #p-pronunciation{
+
+// }
+// #def-medical{
+
+// }
+// #div-def-medical{
+
+// }

@@ -40,22 +40,24 @@ class SearchForMedicalDictionary extends React.Component{
             gramFunction=gramFunction[0].toUpperCase()+gramFunction.slice(1); //make the first letter of gramatical function of the word Capital
             let info=this.state.wordInfo.shortdef.map((res,index)=>{ //will map thrue a wordInfo.shortdef to return all the definitions of the word
                 return <p className="class-definitions" id={"difitition-medical-id-"+index}>{index+1}. {res}</p>}) //return separate <p> for each definition
-            return <div className="info-div-dictionaries">
+            return (
+            <div className="info-div-dictionaries">
             {/* print search word in upper cases */}
-                    <p className="p-word-name">{this.state.wordInfo.meta.id.toUpperCase()}</p> 
+                    <p id="p-word-name-medical">{this.state.wordInfo.meta.id.toUpperCase()}</p> 
                     {/* print the pronunciation of the word */}
                     <p id="p-pronunciation">Pronunciation: [{this.state.wordInfo.hwi.prs[0].mw}]</p>
                     {/* print gramatical FUnction of the word */}
                     <p className="p-gram-func">Gramatical Function: {gramFunction}</p>
                     {/* print separate <div> with definitions */}
-                    <h3 id="h3-def-medical">Definition(s):</h3>
+                    <h3 id="def-medical">Definition(s):</h3>
                     <div id="div-def-medical"> {info}</div>
                    
-                  </div>
+                  </div>)
         }
     }
     render(){
-        return(<div className="main-div-dictionaries">
+        return(
+        <div id="search-div">
         {/* call checkIfExist function and return the result */}
        {this.checkIfExist()}
         </div>)

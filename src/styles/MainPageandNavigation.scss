@@ -15,6 +15,8 @@
 
 // used the following link for references https://stackoverflow.com/questions/46102586/change-default-color-of-link-from-blue-to-white answered by Chase DeAnda
 .class-link{
+    font-family: merienda;
+    font-size: 20px;
     color: rgb(56, 48, 6);
     
 }
@@ -32,4 +34,21 @@
 
 #h1-mainPage{
 margin-top: 100px;
+font-family: $playball;
+font-size: 65px;
+color:$main-page-text;
+}
+
+#quote{
+color:rgb(138, 108, 8);
+font-family: $playball;
+font-size: 55px
+}
+
+#quote-autor{
+
+color:rgb(138, 108, 8);
+margin-top: -50px;
+font-family: $playball;
+font-size: 55px
 }

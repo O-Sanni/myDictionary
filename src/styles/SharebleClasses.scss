@@ -18,11 +18,11 @@ margin-top: -100px;
     justify-content: center;
     align-content: center;
     margin-top: 100px;
-    margin-left: 50px;
- border:$border;
- background-image: url(../assets/backgroundText.png);
- width: 500px;
- height: 400px;
+    margin-left: 150px;
+    border:$border;
+    background-image: url(../assets/backgroundText.png);
+    width: 300px;
+    height: 200px;
 }
 
 .p-form-dictionaries{
@@ -32,3 +32,14 @@ margin-top: -100px;
 .clear-button-dictionaries{
     margin: 20px;
 }
+
+
+.search-result-dictionaries{
+    @include displaySizes();
+    margin-top: 100px;
+    margin-left: 150px;
+    border:$border;
+    background-image: url(../assets/backgroundText.png);
+    width: 700px;
+    height: 600px;
+ }

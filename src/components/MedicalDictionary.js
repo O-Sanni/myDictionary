@@ -42,7 +42,7 @@ class MedicalDictionary extends React.Component{
         <button className="clear-button-dictionaries" type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
         </div></form>
         </div>
-        <div>
+        <div className="search-result-dictionaries">
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
         <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
         if the search is false just return the phrase */}

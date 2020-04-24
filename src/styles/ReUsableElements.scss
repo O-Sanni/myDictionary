@@ -1,16 +1,31 @@
 @mixin displaySizes(){
     display:flex;
     flex-wrap:wrap;
-    flex-direction: column;
     align-content: flex-start;
    
 }
 
 @mixin back-ground-setting(){
     background-repeat: no-repeat;
-    background-size: 1500px 800px;
-    width: auto;
-    height:800px;
+    background-size: cover;
+    // width: auto;
+    height: 800px;
 }
 
 $border:ridge 4px #E8C89F;
+
+// Fonts:
+
+$girassol:'Girassol', cursive;
+$satusfy:'Satisfy', cursive;
+$courgette: 'Courgette', cursive;
+$lobster-two: 'Lobster Two', cursive;
+$merienda: 'Merienda', cursive;
+$oleo: 'Oleo Script', cursive;
+$playball: 'Playball', cursive;
+$barkshire: 'Berkshire Swash', cursive;
+$niconne: 'Niconne', cursive;
+
+// Colors
+
+$main-page-text: rgb(58, 37, 11);
