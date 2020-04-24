@@ -13,16 +13,16 @@ function Navigation(){
             <nav id="navigation">
                 <ul id="nav-ul">
                     <li className="nav-lists">
-                        <Link to="/">Home Page</Link>
+                        <Link className="class-link" to="/">Home Page</Link>
                     </li>
                     <li className="nav-lists">
-                        <Link to="/medical_dictionary">Medical Dictionary</Link>
+                        <Link className="class-link" to="/medical_dictionary">Medical Dictionary</Link>
                     </li>
                     <li className="nav-lists">
-                        <Link to="/thesaurus">Thesaurus</Link>
+                        <Link className="class-link" to="/thesaurus">Thesaurus</Link>
                     </li>
                     <li className="nav-lists">
-                        <Link to="/translation">Translation</Link>
+                        <Link className="class-link" to="/translation">Translation</Link>
                     </li>
                 </ul>
             </nav>

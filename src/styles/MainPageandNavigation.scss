@@ -1,7 +1,23 @@
 @import "ReUsableElements";
 
-
 #navigation{
-    @include displaySizes()
+    background-image: url(../assets/nav.jpg);
+}
+#nav-ul{
+    @include displaySizes();
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:0px ;
+    padding: 0px;
+}
+
+// used the following link for references https://stackoverflow.com/questions/46102586/change-default-color-of-link-from-blue-to-white answered by Chase DeAnda
+.class-link{
+    color: rgb(56, 48, 6);
     
+}
+
+.class-link:hover{
+    color: rgb(245, 206, 180)
 }

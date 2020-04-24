@@ -19,3 +19,4 @@
     1. https://reactjs.org/docs/forms.html#the-select-tag
     2. https://www.tutorialsteacher.com/sass/import-files-and-partials
     3. https://sass-lang.com/guide
+    4. https://stackoverflow.com/questions/46102586/change-default-color-of-link-from-blue-to-white

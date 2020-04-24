@@ -2,6 +2,7 @@
 
 #main-div-medical{
    @include displaySizes();
+   flex-direction: column;
    background-image: url(../assets/medical.png);
    @include back-ground-setting();
 }
