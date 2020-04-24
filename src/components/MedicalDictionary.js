@@ -1,7 +1,7 @@
 import React from "react";
 import SearchForMedicalDictionary from "./SerachForMedicalDictionary"
 import "../styles/MedicalDictionary.scss"
-
+import "../styles/SharebleClasses.scss"
 
 
 const initialState=""; //create global variable with initial state empty wtring to using it over again in my code
