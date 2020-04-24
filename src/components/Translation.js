@@ -2,9 +2,6 @@ import React from "react";
 import axios from "axios";
 import "../styles/Translation.scss";
 
-
-
-
 class Translation extends React.Component{
     constructor(props){
         super(props);
@@ -16,9 +13,8 @@ class Translation extends React.Component{
     async getTranslationInfo(){
         const key=process.env.REACT_APP_TRANSLATION_API_KEY;
         try{
-        let translated=await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/translate?lang=${this.props.language}&text=${this.props.text}&key=${key}`)
-        this.setState({translation: translated.data});
-        console.log(this.state.translation);
+            let translated=await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/translate?lang=${this.props.language}&text=${this.props.text}&key=${key}`)
+            this.setState({translation: translated.data});
     }
         catch(error){
             console.log(error);
