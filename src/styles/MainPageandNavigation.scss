@@ -1,8 +1,9 @@
 @import "ReUsableElements";
-
+//Navigation bar
 #navigation{
     background-image: url(../assets/navigation2.jpg);
 }
+
 #nav-ul{
     @include displaySizes();
     list-style: none;
@@ -25,30 +26,30 @@
     color: rgb(250, 234, 203)
 }
 
+//Main Page
 #main-div-mainPage{
     @include displaySizes();
-    justify-content: center;
     @include back-ground-setting();
+    justify-content: center;
     background-image: url(../assets/mainPage.jpg);
 }
 
 #h1-mainPage{
-margin-top: 100px;
-font-family: $playball;
-font-size: 65px;
-color:$main-page-text;
+    margin-top: 100px;
+    font-family: $playball;
+    font-size: 65px;
+    color:$main-page-text;
 }
 
 #quote{
-color:rgb(138, 108, 8);
-font-family: $playball;
-font-size: 55px
+    color:rgb(138, 108, 8);
+    font-family: $playball;
+    font-size: 55px
 }
 
 #quote-autor{
-
-color:rgb(138, 108, 8);
-margin-top: -50px;
-font-family: $playball;
-font-size: 55px
+    color:rgb(138, 108, 8);
+    margin-top: -50px;
+    font-family: $playball;
+    font-size: 55px;
 }

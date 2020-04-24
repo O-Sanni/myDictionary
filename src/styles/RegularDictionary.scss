@@ -1,16 +1,22 @@
 @import "ReUsableElements";
+
+//RegularDictionary.js
+
 #main-div-regular{
     @include displaySizes();
     @include back-ground-setting();
     background-image: url(../assets/regularDictionary.png);
 }
 
+//SearchForRegular.js
 .class-definitions-regular{
-@include syn-ant-def-regular();
+    @include syn-ant-def-regular();
 }
+
 .p-synonyms-class{
     @include syn-ant-def-regular();
 }
+
 .p-antonyms-class{
     @include syn-ant-def-regular();
 }
@@ -21,6 +27,7 @@
     font-family:$playball ;
     margin-top: 10px;
 }
+
 #p-gram-func-regular{
     font-size:35px;
     color:$text-color;
@@ -30,14 +37,14 @@
 #h3-def-regular{
     margin-top:-25px;
     color:$text-color;
-    @include def-syn-anton-name();
-    
+    @include def-syn-anton-name();    
 }
+
 #h3-synonyms-regular{
     color:$text-color;
-    @include def-syn-anton-name();
-   
+    @include def-syn-anton-name(); 
 }
+
 #h3-antonyms-regular{
     color:$text-color;
     @include def-syn-anton-name();

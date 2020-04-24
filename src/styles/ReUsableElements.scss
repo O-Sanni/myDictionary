@@ -1,14 +1,15 @@
+//Elements in this stylesheet are used in different styles within the program
+
+//Mixins
 @mixin displaySizes(){
     display:flex;
     flex-wrap:wrap;
     align-content: flex-start;
-   
 }
 
 @mixin back-ground-setting(){
     background-repeat: no-repeat;
     background-size: cover;
-    // width: auto;
     height: 800px;
 }
 
@@ -18,13 +19,13 @@
     margin-top:-10px;
     font-weight: lighter;
 }
+
 @mixin def-syn-anton-name(){
     font-size: 25px;
     font-family:$playball ;
 }
 
 // Fonts:
-
 $girassol:'Girassol', cursive;
 $satusfy:'Satisfy', cursive;
 $courgette: 'Courgette', cursive;

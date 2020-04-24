@@ -1,5 +1,7 @@
 @import "ReUsableElements";
 
+//TranslationPage.js
+
 #main-div-transl-page{
     @include displaySizes();
     justify-content: center;
@@ -18,6 +20,7 @@
     height:600px;
     padding: 50px;;
 }
+
 #select-lable{
     @include displaySizes();
     margin-top: 25px;
@@ -26,6 +29,7 @@
     font-family:$barkshire;
     flex-direction: column;  
 }
+
 #select-transl{
     width:150px;
     margin-top:10px;
@@ -34,10 +38,12 @@
     font-size:15px;
     background-image: url("../assets/buttons.jpg");
 }
+
 .options-lang-class{
     font-family: $merienda;
     font-size:15px;
 }
+
 #textarea-transl{
     padding:25px;
     outline: none;
@@ -50,9 +56,11 @@
     color:$text-color;
     background-color:rgba(229, 212, 170, 0.461);
 }
+
 #input-submit-transl{
     background-image: url("../assets/buttons.jpg");
 }
+
 #clear-button-transl{
     margin-top: 15px;
     margin-left: 15px;
@@ -60,16 +68,21 @@
     width: 50px;
     height: auto;
 }
+
 #buttons-translate{
     margin-left: -530px;
 }
+
+//Translation.js
+
 #translation-output-div{
     margin-top: 25px;
-background-image: url(../assets/backgroundText.png);
-border:$border;
-width:650px;
+    background-image: url(../assets/backgroundText.png);
+    border:$border;
+    width:650px;
     height: 250px;
 }
+
 #powered-by-a{
     font-family: merienda;
     font-size: 10px;
@@ -85,5 +98,5 @@ width:650px;
 }
 
 #main-div-trasl-text{
-@include displaySizes();
+    @include displaySizes();
 }
