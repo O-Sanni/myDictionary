@@ -16,4 +16,6 @@
 
 ## Sources
 
-    1.https://reactjs.org/docs/forms.html#the-select-tag
+    1. https://reactjs.org/docs/forms.html#the-select-tag
+    2. https://www.tutorialsteacher.com/sass/import-files-and-partials
+    3. https://sass-lang.com/guide
