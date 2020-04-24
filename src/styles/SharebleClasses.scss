@@ -11,7 +11,8 @@ margin-top: -100px;
     height: auto;
     font-size: 25px;
     background-image: url("../assets/buttons.jpg");
-    color:rgb(250, 234, 223);
+    font-family: $playball;
+    color:rgb(251, 243, 214);
 }
 
 .form-button-dictionaries{
@@ -22,6 +23,7 @@ margin-top: -100px;
     margin-top: 200px;
     margin-left: 100px;
     border:$border;
+    color:$text-color;
     background-image: url(../assets/backgroundText.png);
     width: 350px;
     height: 250px;
@@ -30,6 +32,7 @@ margin-top: -100px;
 .p-form-dictionaries{
     margin-top:100px;
     font-size: 30px;
+    color:$text-color;
     font-family: $playball;
 
 }
@@ -37,6 +40,7 @@ margin-top: -100px;
 {
     margin-top: -15px;
     font-size: 20px;
+    color:$text-color;
     font-family: $playball;
 }
 

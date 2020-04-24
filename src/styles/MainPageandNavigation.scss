@@ -27,7 +27,7 @@
 
 #main-div-mainPage{
     @include displaySizes();
-    align-content: center;
+    justify-content: center;
     @include back-ground-setting();
     background-image: url(../assets/mainPage.jpg);
 }

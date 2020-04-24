@@ -22,12 +22,14 @@
     @include displaySizes();
     margin-top: 25px;
     font-size:25px;
+    color:$text-color;
     font-family:$barkshire;
     flex-direction: column;  
 }
 #select-transl{
     width:150px;
     margin-top:10px;
+    color:$text-color;
     font-family: $merienda;
     font-size:15px;
     background-image: url("../assets/buttons.jpg");
@@ -45,6 +47,7 @@
     height: 150px;
     font-size: 25px;
     font-family:$merienda;
+    color:$text-color;
     background-color:rgba(229, 212, 170, 0.461);
 }
 #input-submit-transl{
@@ -75,6 +78,7 @@ width:650px;
 
 #p-trabslation-txt{
     font-family:$merienda;
+    color:$text-color;
     font-size: 25px;
     margin-top: -15px;
     padding: 20px;

@@ -30,7 +30,7 @@ class RegularDictionary extends React.Component{
         <div className="form-button-dictionaries">
         <form className="form-dictionaries" onSubmit={this.submitButton} >
         <p className="p-form-dictionaries">Please enter word and then press submit</p>
-            <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+            <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} placeholder="Enter word"/>
             <div className="button-clear-dictionaries">
             <input className="submit-button-dictionaries" type="submit" />
        {/* clear button will clear the state, put values to initial state in order to do a new search */}
@@ -43,7 +43,7 @@ class RegularDictionary extends React.Component{
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
         <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
         if the search is false just return the phrase */}
-       {this.state.search ? (<SearchForRegular id={this.state.searchWord} />) : ""}
+       {this.state.search ? (<SearchForRegular id={this.state.searchWord.toLowerCase()} />) : ""}
         </div>
         </div>)
    }  
