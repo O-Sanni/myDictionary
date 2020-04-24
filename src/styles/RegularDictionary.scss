@@ -1,0 +1,6 @@
+@import "ReUsableElements";
+#main-div-regular{
+    @include displaySizes();
+    @include back-ground-setting();
+    background-image: url(../assets/dictionary.png);
+}

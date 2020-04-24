@@ -31,18 +31,22 @@ class MedicalDictionary extends React.Component{
    render(){
         return (
         <div id="main-div-medical"> 
+        <div className="form-button-dictionaries">
         <form className="form-dictionaries" onSubmit={this.submitButton} >
+        <p className="p-form-dictionaries">Please enter word and then press submit</p>
         {/* <input /> will have the event  value, such as word that user want to search*/}
-            <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
-            <input className="submit-button-dictionaries" type="submit" />
-        </form>
+        <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} placeholder="enter word" />
+        <div className="button-clear-dictionaries">
+        <input className="submit-button-dictionaries" type="submit" />
         {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button className="clear-button-dictionaries" type="button" onClick={()=>{this.setState({searchWord: initialState, search:false})}}>Clear</button>
+        </div></form>
+        </div>
         <div>
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
         <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
         if the search is false just return the phrase */}
-       {this.state.search ? (<SearchForMedicalDictionary id={this.state.searchWord} />) : "Please enter word to start a search"}
+       {this.state.search ? (<SearchForMedicalDictionary id={this.state.searchWord} />) : ""}
         </div>
         </div>)
    }  

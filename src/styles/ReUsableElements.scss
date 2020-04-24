@@ -1,6 +1,8 @@
 @mixin displaySizes(){
     display:flex;
     flex-wrap:wrap;
+    flex-direction: column;
+    align-content: flex-start;
    
 }
 
@@ -10,3 +12,5 @@
     width: auto;
     height:800px;
 }
+
+$border:ridge 4px #E8C89F;

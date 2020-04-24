@@ -1,6 +1,6 @@
 import React from "react";
 import SearchForRegular from "./SearchForRegular";
-
+import "../styles/RegularDictionary.scss"
 
 class RegularDictionary extends React.Component{
   constructor(props){
@@ -26,14 +26,19 @@ class RegularDictionary extends React.Component{
 
    render(){
         return (
-        <div className="main-div-dictionaries">
-        <form className="form-dictionaries"onSubmit={this.submitButton} >
+        <div id="main-div-regular">
+        <div className="form-button-dictionaries">
+        <form className="form-dictionaries" onSubmit={this.submitButton} >
+        <p className="p-form-dictionaries">Please enter word and then press submit</p>
             <input clssName="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} />
+            <div className="button-clear-dictionaries">
             <input className="submit-button-dictionaries" type="submit" />
-        </form>
-        {/* clear button will clear the state, put values to initial state in order to do a new search */}
+       {/* clear button will clear the state, put values to initial state in order to do a new search */}
         <button className="clear-button-dictionaries"  type="button" onClick={()=>{this.setState({searchWord: "", search:false})}}>Clear</button>
-        <div>
+        </div>
+        </form>
+         </div>
+         <div>
         {/* by clicking submit button we are changing the state of search , when search is true we are calling 
         <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
         if the search is false just return the phrase */}

@@ -1,7 +1,7 @@
 @import "ReUsableElements";
 
 #navigation{
-    background-image: url(../assets/nav.jpg);
+    background-image: url(../assets/navigation2.jpg);
 }
 #nav-ul{
     @include displaySizes();
@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     margin:0px ;
     padding: 15px;
-    border-bottom: groove 5px rgb(248, 238, 219);
+    border-bottom: $border;
 }
 
 // used the following link for references https://stackoverflow.com/questions/46102586/change-default-color-of-link-from-blue-to-white answered by Chase DeAnda
@@ -21,4 +21,15 @@
 
 .class-link:hover{
     color: rgb(250, 234, 203)
+}
+
+#main-div-mainPage{
+    @include displaySizes();
+    align-content: center;
+    @include back-ground-setting();
+    background-image: url(../assets/mainPage.jpg);
+}
+
+#h1-mainPage{
+margin-top: 100px;
 }

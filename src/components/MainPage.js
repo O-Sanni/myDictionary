@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/MainPageandNavigation.scss"
 
 function MainPage (){
     

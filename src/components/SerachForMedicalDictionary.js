@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import "../styles/SearchForMedical.scss"
+import "../styles/MedicalDictionary.scss"
 
 
 class SearchForMedicalDictionary extends React.Component{

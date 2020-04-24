@@ -1,0 +1,7 @@
+@import "ReUsableElements";
+
+#main-div-transl-page{
+    @include displaySizes();
+    @include back-ground-setting();
+    background-image: url(../assets/translationPage.jpg);
+}

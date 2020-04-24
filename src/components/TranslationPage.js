@@ -1,5 +1,6 @@
 import React from "react";
 import Translation from "./Translation";
+import "../styles/Translation.scss"
 
 
 const initialState=""; //constant value to use within the code
