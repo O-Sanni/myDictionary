@@ -10,6 +10,7 @@
 #translate-box{
     @include displaySizes();
     flex-direction: column;
+    align-content: center;
     background-image: url("../assets/backgroundText.png");
     margin-top: 50px;
     border:$border;
@@ -27,10 +28,10 @@
 }
 
 #textarea-transl{
+    padding:25px;
     outline: none;
     resize: none;
     width:600px;
-    margin-left: 30px;
     height: 150px;
     font-size: 35px;
     font-family:$niconne;
