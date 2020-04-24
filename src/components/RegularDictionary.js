@@ -18,6 +18,7 @@ class RegularDictionary extends React.Component{
       event.preventDefault(); //prevent default actions 
       this.setState({searchWord: event.target.value}) //setState to the value which user inputed 
   }
+
   submitButton(event){
     event.preventDefault(); //prevent default actions 
     this.setState({search: true}); //change search to true
@@ -26,26 +27,26 @@ class RegularDictionary extends React.Component{
 
    render(){
         return (
-        <div id="main-div-regular">
-        <div className="form-button-dictionaries">
-        <form className="form-dictionaries" onSubmit={this.submitButton} >
-        <p className="p-form-dictionaries">Please enter word and then press submit</p>
-            <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} placeholder="Enter word"/>
-            <div className="button-clear-dictionaries">
-            <input className="submit-button-dictionaries" type="submit" />
-       {/* clear button will clear the state, put values to initial state in order to do a new search */}
-        <button className="clear-button-dictionaries"  type="button" onClick={()=>{this.setState({searchWord: "", search:false})}}>Clear</button>
-        <p className="clear-text">If you need to start new search please press clear</p>
-        </div>
-        </form>
-         </div>
-         <div className="search-result-dictionaries">
-        {/* by clicking submit button we are changing the state of search , when search is true we are calling 
-        <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
-        if the search is false just return the phrase */}
-       {this.state.search ? (<SearchForRegular id={this.state.searchWord.toLowerCase()} />) : ""}
-        </div>
-        </div>)
+                <div id="main-div-regular">
+                    <div className="form-button-dictionaries">
+                        <form className="form-dictionaries" onSubmit={this.submitButton} >
+                            <p className="p-form-dictionaries">Please enter word and then press submit</p>
+                            <input className="input-search-dictionaries" type="text" value={this.state.searchWord} onChange={this.getWordHandler} placeholder="Enter word"/>
+                            <div className="button-clear-dictionaries">
+                                <input className="submit-button-dictionaries" type="submit" />
+                                {/* clear button will clear the state, put values to initial state in order to do a new search */}
+                                <button className="clear-button-dictionaries"  type="button" onClick={()=>{this.setState({searchWord: "", search:false})}}>Clear</button>
+                                <p className="clear-text">If you need to start new search please press clear</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div className="search-result-dictionaries">
+                        {/* by clicking submit button we are changing the state of search , when search is true we are calling 
+                        <SearchForMedicalDictionary /> and send the id as the word which user want to look for, 
+                        if the search is false just return the phrase */}
+                        {this.state.search ? (<SearchForRegular id={this.state.searchWord.toLowerCase()} />) : ""}
+                    </div>
+                </div>)
    }  
 }
 
