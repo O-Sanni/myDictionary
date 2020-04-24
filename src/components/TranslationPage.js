@@ -36,11 +36,12 @@ class TranslationPage extends React.Component{
    render(){
         return (
         <div id="main-div-transl-page">
+        <div id="translate-box">
         <form id="form-transl-page" onSubmit={this.submitButton}>
-            <textarea id="textarea-transl" type="text" value={this.state.textTranslate} onChange={this.handleTextTranslate} />
+            <textarea id="textarea-transl" type="text" value={this.state.textTranslate} onChange={this.handleTextTranslate} placeholder="please enter text"/>
         <label id="select-lable"> 
         {/* <label> will hold the list of the availiable languages for translation */}
-            Please choose language to translate
+            Please choose language:
             <select id="select-transl" value={this.state.value} onChange={this.handleLanguage}>
               <option className="options-lang-class" value="en">English</option>
               <option className="options-lang-class" value="ar">Arabic</option>
@@ -79,6 +80,7 @@ class TranslationPage extends React.Component{
         </form>
         {/* clear button will setState to initial values */}
         <button id="clear-button-transl" type="button" onClick={()=>{this.setState({textTranslate: initialState, textInput: false})}}>Clear</button>
+        </div>
         <div>
         {/* use ternary operator, if the textInput is true , if the user entered text and press submitt call <Translation /> 
         and send  language and text to Translations*/}

@@ -2,6 +2,37 @@
 
 #main-div-transl-page{
     @include displaySizes();
+    justify-content: center;
     @include back-ground-setting();
     background-image: url(../assets/translationPage.jpg);
+}
+
+#translate-box{
+    @include displaySizes();
+    flex-direction: column;
+    background-image: url("../assets/backgroundText.png");
+    margin-top: 50px;
+    border:$border;
+    width:650px;
+    height:600px;
+    padding: 50px;;
+}
+#select-lable{
+    @include displaySizes();
+    flex-direction: column;  
+}
+#select-transl{
+    width:150px;
+    background-image: url("../assets/buttons.jpg");
+}
+
+#textarea-transl{
+    outline: none;
+    resize: none;
+    width:600px;
+    margin-left: 30px;
+    height: 150px;
+    font-size: 35px;
+    font-family:$niconne;
+    background-color:rgba(229, 212, 170, 0.461);
 }
