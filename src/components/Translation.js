@@ -12,9 +12,11 @@ class Translation extends React.Component{
     //getTranslationInfo will call axios.get to get a translation from the API and setState with the translation
     async getTranslationInfo(){
         const key=process.env.REACT_APP_TRANSLATION_API_KEY;
+        console.log(key);
         try{
             let translated=await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/translate?lang=${this.props.language}&text=${this.props.text}&key=${key}`)
             this.setState({translation: translated.data});
+            
     }
         catch(error){
             console.log(error);
