@@ -12,6 +12,7 @@ class SearchForRegular extends React.Component{
 
     async getWordInfo(){
         const key=process.env.REACT_APP_API_KEY_THESAURUS;
+        console.log(key)
         try{
             let getWord=await axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${this.props.id}?key=${key}`)
             this.setState({wordInfo: getWord.data[0]});
