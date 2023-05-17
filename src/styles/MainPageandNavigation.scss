@@ -30,7 +30,7 @@
 #main-div-mainPage{
     @include displaySizes();
     @include back-ground-setting();
-    justify-content: center;
+    flex-flow: column wrap;
     background-image: url(../assets/mainPage.jpg);
 }
 

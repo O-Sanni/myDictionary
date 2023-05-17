@@ -26,10 +26,10 @@ class SearchForRegular extends React.Component{
     }
     
     checkIfExist(){
-        if (this.state.wordInfo==undefined) {
+        if (this.state.wordInfo===undefined) {
             return <p className="p-word-not-found">Word information not found</p>
         }
-        else if (this.state.wordInfo.meta==undefined || this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id || (typeof this.state.wordInfo!="object")){
+        else if (this.state.wordInfo.meta===undefined || this.state.wordInfo==="" || this.state.wordInfo.meta.id!==this.props.id || (typeof this.state.wordInfo!=="object")){
             return <p className="p-word-not-found">Word information not found</p>
         }
         else{

@@ -6,21 +6,19 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "node-sass": "^4.13.1",
+    "axios": "^1.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-dropdown": "^1.7.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
-    "sass": "^1.26.3"
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "^5.0.1",
+    "saas": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "scss": "sass --whatch scss -o css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.62.1"
   }
 }

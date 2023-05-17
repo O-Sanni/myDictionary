@@ -34,10 +34,10 @@ class SearchForMedicalDictionary extends React.Component{
     checkIfExist(){
         //check if wordInfo state empty, or it does not much user search, or it undefined or it is not a string
         //if so it would return the <p> with specific text
-        if ( this.state.wordInfo==undefined ){
+        if ( this.state.wordInfo===undefined ){
             return <p className="p-word-not-found">Word information not found</p>
         }
-        else if ( this.state.wordInfo.meta==undefined || this.state.wordInfo==="" || this.state.wordInfo.meta.id!=this.props.id ||(typeof this.state.wordInfo!="object")){
+        else if ( this.state.wordInfo.meta===undefined || this.state.wordInfo==="" || this.state.wordInfo.meta.id!==this.props.id ||(typeof this.state.wordInfo!=="object")){
             return <p className="p-word-not-found">Word information not found</p>
         }
         else{
